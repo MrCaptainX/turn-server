@@ -1,0 +1,11 @@
+{
+    "listeningPort": 3478,
+    "relayAddress": "127.0.0.1",
+    "relayPort": 3478,
+    "realm": "localhost",
+    "authList": [{
+      "username": "testuser",
+      "password": "testpassword"
+    }]
+  }
+  
