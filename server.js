@@ -1,11 +1,8 @@
 const Turn = require('node-turn');
-
-const config = require('./config.json');
-
 const server = new Turn({
-  listeningPort: config.listeningPort,
-  relayAddress: config.relayAddress,
-  relayPort: config.relayPort,
+  listeningPort: 3478,
+  relayAddress: 'https://turn-server-s41y.onrender.com',
+  relayPort: 3478,
   authMech: 'none',
   debugLevel: 'DEBUG'
 });
@@ -16,4 +13,5 @@ server.start((err) => {
   } else {
     console.log('TURN server started');
   }
+});
 });
