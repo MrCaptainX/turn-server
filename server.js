@@ -14,4 +14,3 @@ server.start((err) => {
     console.log('TURN server started');
   }
 });
-});
