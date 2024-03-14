@@ -1,8 +1,8 @@
 {
     "listeningPort": 3478,
-    "relayAddress": "127.0.0.1",
+    "relayAddress": "https://turn-server-s41y.onrender.com",
     "relayPort": 3478,
-    "realm": "localhost",
+    "realm": "https://turn-server-s41y.onrender.com",
     "authList": [{
       "username": "testuser",
       "password": "testpassword"
