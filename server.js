@@ -1,10 +1,13 @@
 const Turn = require('node-turn');
 const server = new Turn({
   listeningPort: 3478,
-  relayAddress: 'https://turn-server-s41y.onrender.com',
+  relayAddress: "https://turn-server-s41y.onrender.com",
   relayPort: 3478,
-  authMech: 'none',
-  debugLevel: 'DEBUG'
+  realm: "https://turn-server-s41y.onrender.com",
+  authList: [{
+    username: "testuser",
+    password: "testpassword"
+  }]
 });
 
 server.start((err) => {
